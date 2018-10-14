@@ -11,7 +11,7 @@ class App extends React.Component {
   memberList(List) {
     const memberList = List.map((member, index) => {
       return (
-        <li key={member.index}>
+        <li key={index}>
           {member.name},{member.age}
         </li>
       );
@@ -19,7 +19,7 @@ class App extends React.Component {
     return <ul>{memberList}</ul>;
   }
   render() {
-    console.log(this.state.member);
+    //console.log(this.state.member);
     return (
       <div>
         <h2>App</h2>
