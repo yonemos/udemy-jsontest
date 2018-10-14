@@ -11,7 +11,7 @@ class App extends React.Component {
   memberList(List) {
     const memberList = List.map((member, index) => {
       return (
-        <li>
+        <li key={member.index}>
           {member.name},{member.age}
         </li>
       );
